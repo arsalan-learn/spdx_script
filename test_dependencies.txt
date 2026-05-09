@@ -1,0 +1,25 @@
+# Development dependencies to remove from SBOM
+# These are build tools, linters, and development utilities that shouldn't be in production SBOMs
+# You can specify dependencies in two formats:
+# 1. Just the name (removes all versions): eslint
+# 2. Name with version (removes specific version): autoprefixer@10.4.17
+
+# CSS and PostCSS tools - specific versions
+autoprefixer@10.4.17
+postcss@8.4.33
+tailwind-scrollbar@3.0.5
+
+# Code formatting and linting - remove all versions
+eslint
+eslint-config-airbnb
+eslint-config-next
+eslint-config-prettier
+eslint-plugin-import
+eslint-plugin-jsx-a11y
+eslint-plugin-prettier
+eslint-plugin-react
+eslint-plugin-react-hooks
+prettier
+
+
+requests@2.32.3
